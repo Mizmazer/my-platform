@@ -1,0 +1,24 @@
+# Java / Gradle
+.gradle/
+build/
+out/
+*.class
+
+# Node / React / Vite
+node_modules/
+dist/
+.vite/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Environment files / secrets
+.env
+.env.*
+!.env.example
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
