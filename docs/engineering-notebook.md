@@ -139,3 +139,35 @@ Evidence / verification:
 * Engineering style guide: `docs/style-guide.md`
 * Style guide introduced or updated through PR #3
 * Repository structure visible from the project root
+
+### React and TypeScript Frontend Foundation
+
+The public frontend uses React and TypeScript with Vite to provide a maintainable, type-checked foundation for the production platform.
+
+Implementation:
+
+* The frontend application lives in `frontend/`.
+* React provides a component-based approach to building the user interface.
+* TypeScript adds static type checking to JavaScript.
+* Vite provides local development tooling and generates static production assets.
+* ESLint checks the frontend source for code-quality issues.
+* Production build artifacts are generated in `frontend/dist/`.
+
+Why it matters:
+
+React provides reusable components for building and maintaining the user interface, while TypeScript catches many type-related errors before runtime. Vite provides a repeatable path from source code to deployable static files. Together, these tools establish a frontend foundation that can be verified locally and deployed through a production hosting platform.
+
+Tradeoffs / limitations:
+
+React and TypeScript introduce build tooling, dependency management, and additional project complexity compared with simple HTML and JavaScript. TypeScript's benefits depend on using appropriate types and maintaining the project configuration. The additional complexity is justified by reusable components, stronger type checking, and a structure that can support continued development.
+
+Evidence / verification:
+
+* Frontend source: `frontend/`
+* Frontend instructions: `frontend/README.md`
+* Local development: `npm run dev`
+* Lint: `npm run lint`
+* Production build: `npm run build`
+* Production output: `frontend/dist/`
+* Verified Vite version: 8.3.4
+* Frontend foundation pull request: TBD
