@@ -11,7 +11,7 @@ function App() {
         <h1>Joshua Burick</h1>
 
         <p className="description">
-          I'm a Computer Science student at Grove City College with an
+          I'm a Computer Science student with an
           interest in technology.
         </p>
       </section>
